@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription | Learn more about your vitamins | Wellvita</title>
+    <meta
+      name="description"
+      content="
+      Wellvita provides vitamins with plant based ingredients. Read about the different ingredients and the benefits of your vitamins here »"
+    />
+  </head>
+    <link rel="stylesheet" href="subscription-page1.css">
+
+    <!--FONT STYLES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
+    
+</head>
+
+<body>
+    <!-- <header> -->
+        <nav>
+            <div class="menu-icon">
+
+                <img src="assets/menu.png" alt="menu">
+            </div>
+            <div class="logo">
+                <img src="assets/logo.png" alt="logo">
+            </div>
+            <div class="nav-items">
+                <li><a href="#">Produkter</a></li>
+                <li><a href="#">Kundehistorier</a></li>
+                <li><a href="#">Om os</a></li>
+                <li><a href="#">Kontakt os</a></li>
+                <li><a href="#">Din tryghed</a></li>
+            </div>
+
+            <div class="search-icon">
+                <span class="fas fa-search"></span>
+            </div>
+
+            <div class="cancel-icon">
+
+                <img src="assets/cross.png" alt="exit">
+            </div>
+
+            <div class="search-bar">
+                <form action="#">
+                    <input type="search" class="search-data" placeholder="Search" required>
+
+                    <button type="submit" class="fas fa-search"></button>
+
+
+                </form>
+
+            </div>
+
+            <div class="nav-icons">
+                <img src="assets/user.png" alt="user icon" onclick="toggleMenu()">
+                <img src="assets/cart.png" alt="cart icon">
+
+
+            </div>
+
+        </nav>
+
+
+        <div class="dashboard-menu">
+
+            <h1 class="menu-title">Hi, Anne</h1>
+
+            <div class="scrollmenu">
+                <a href="subscriptions-page1.html" style="color:black">Subscription</a>
+                <a href="dashboard.html" >My Wellvita</a>
+               
+                <a href="account_settings.html">Account Settings</a>
+                <a href="#about">Order history</a>
+                <div class="sign-out-a">
+                    <a href="#news">Sign out</a> </div>
+            </div>
+
+        </div>
+    <!-- </header> -->
+
+    <main class="main-subscription-page-2">
+        <section class="boost-health">
+
+            <div class="product-slider">
+
+                <div class="product">
+                    <img src="assets/product-1.png" alt="product">
+                </div>
+
+                <div class="product">
+                    <img src="assets/product-img-carousel.png" alt="product">
+                </div>
+
+                <div class="product-hide">
+                    <img src="assets/product-2.png" alt="product">
+                </div>
+
+                <div class="product-hide">
+                    <img src="assets/product-1.png" alt="product">
+                </div>
+            </div>
+<div class="vitamin-recommended">
+            <h3>Vitamin C & Zink</h4>
+                <p id="cursive-grey-1">Recommended to take daily</p>
+            </div>
+            <p class="essential">Essential for Women</p>
+
+        
+            <p><strong>Estimated delivery: 23-30 Nov.</strong></p>
+            <div class="flex-box">
+                <img src="assets/ri_truck-fill.png" alt="truck icon">
+                <a id="track-here-underline" href="#">Track here</a>
+            </div>
+<hr class="line2"></hr>
+
+        </section>
+
+
+
+
+        <div class="box-5">
+            <div class="box-5-div1">
+                <lottie-player
+                id="leaf-animation"
+                src="animations/leaf-animation.json"
+                background="transparent"
+                speed="1"
+                style="width: 70px; height: 70px"
+                seek
+                id="leaf"
+              ></lottie-player>
+                <p>Plant based</p>
+            </div>
+            <script>
+                LottieInteractivity.create({
+                    player:'#leaf-animation',
+                    mode:"scroll",
+                    actions: [
+                        {
+                        visibility: [0.1, 1.0],
+                        type: "play"
+                        }
+                    ]
+                });
+                </script>
+            <div class="box-5-div1">
+                <lottie-player
+                id="kemi"
+                src="animations/kemi-animations.json"
+                background="transparent"
+                speed="1"
+                style="width: 70px; height: 70px"
+                autoplay
+              ></lottie-player>
+              <script>
+                LottieInteractivity.create({
+                    player:'#kemi',
+                    mode:"scroll",
+                    actions: [
+                        {
+                        visibility: [0.1, 1.0],
+                        type: "play"
+                        }
+                    ]
+                });
+                </script>
+       
+
+
+                <p>Clinically tested</p>
+            </div>
+            <div class="box-5-div1">
+                <lottie-player
+          src="animations/water-animation.json"
+          id="water"
+          background="transparent"
+          speed="1"
+          style="width: 70px; height: 70px"
+          autoplay
+        ></lottie-player>
+
+        <script>
+            LottieInteractivity.create({
+                player:'#water',
+                mode:"scroll",
+                actions: [
+                    {
+                    visibility: [0.1, 1.0],
+                    type: "play"
+                    }
+                ]
+            });
+            </script>
+                <p>No artificial colouring</p>
+            </div>
+            <div class="box-5-div1">
+                <lottie-player
+                id="coin"
+                src="animations/coin-animation.json"
+                background="transparent"
+                speed="1"
+                style="width: 70px; height: 70px"
+                autoplay
+              ></lottie-player>
+                <p>Best price </p>
+            </div>
+        </div>
+        <script>
+            LottieInteractivity.create({
+                player:'#coin',
+                mode:"scroll",
+                actions: [
+                    {
+                    visibility: [0.1, 1.0],
+                    type: "play"
+                    }
+                ]
+            });
+            </script>
+
+        <div class="box-6">
+            <h2>Plants based Ingredients</h2>
+            <p>Vitamin C & zinc is made of vegan ingredients. We ensure every vitamin is created with the same benefits
+            </p>
+        </div>
+
+        <div class="container-ingredients">
+            <div class="text-ingredients">
+                <h3>Zinc</h3>
+                <p>Jylland Denmark</p>
+            </div>
+            <div class="zink">
+                <img src="assets/zinc.png" alt="zink">
+            </div>
+        </div>
+
+        <div class="container-ingredients">
+            <div class="text-ingredients-2">
+                <h3>Vitamin C</h3>
+                <p>Sevilla, Spain</p>
+            </div>
+            <div class="vitamin-c">
+                <img src="assets/orange.png" alt="oranges">
+            </div>
+        </div>
+
+        <div class="container-ingredients">
+            <div class="text-ingredients-2">
+                <h3>Calcium</h3>
+                <p>Oslo, Norway</p>
+            </div>
+            <div class="calcium">
+                <img src="assets/calicum.png" alt="calcium">
+            </div>
+        </div>
+
+
+        <div class="two-row-grid">
+
+            <img src="assets/fish-oil.jpg" alt="picture of fish oil vitamins">
+
+
+            <div>
+                <section class="list-wrapper">
+                    <p id="benefits-list">Benefits</p>
+                    <div class="grey-line"></div>
+                    <div class="list-item-wrapper">
+                        <div class="list-bullet"></div>
+                        <div class="list-item">
+                            <div class="list-title">Brain Health</div>
+                            <p class="list-text">
+                                Vitamin C mixed with X helps the brain promote red blood cells
+                            </p>
+                        </div>
+                </section>
+                <section class="list-item-wrapper">
+                    <div class="list-bullet"></div>
+                    <div class="list-item">
+                        <div class="list-title">Bone Health</div>
+                        <p class="list-text">
+                            Vitamin C mixed with X helps the brain promote red blood cells
+                        </p>
+                    </div>
+                </section>
+                <section class="list-item-wrapper">
+                    <div class="list-bullet"></div>
+                    <div class="list-item">
+                        <div class="list-title">Antioxidant Support</div>
+                        <p class="list-text">
+                            Vitamin C mixed with X helps the brain promote red blood cells
+                        </p>
+                    </div>
+                    <div class="white-line"></div>
+                </section>
+            </div>
+        </div>
+        <footer>
+            <h2 class="h3-footer">Need help? Call us.</h2>
+            <p class="phone">+45 93 93 93 93</p>
+            <section class="e-jura">
+              <a href="#" class="footer-content">Privacy Policy</a>
+              <a href="#" class="footer-content">Cookies Policy</a>
+              <a href="#" class="footer-content">Terms of Use</a>
+            </section>
+          </footer>
+
+    </main>
+
+
+
+    <script src="subscription-page1.js"></script>
+    <script>
+        LottieInteractivity.create({
+          player: "#leaf",
+          mode: "scroll",
+          actions: [
+            {
+              state: "loop",
+              visibility: [0, 1.0],
+              type: "seek",
+              frames: [0, 10],
+            },
+    
+          ],
+        });
+      </script>
+</body>
+
+</html>

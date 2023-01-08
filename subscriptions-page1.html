@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription | Administer your vitamin subscriptions | Wellvita</title>
+    <meta
+      name="description"
+      content="
+      Change your vitamin subscription with just a few clicks on your subscription page. Change frequency, postpone, pause and cancel your vitamin subscription here »"
+    />
+  </head>
+    <link rel="stylesheet" href="subscription-page1.css">
+
+    <!--FONT STYLES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="menu-icon">
+
+                <img src="assets/menu.png" alt="menu">
+            </div>
+            <div class="logo">
+                <img src="assets/logo.png" alt="logo">
+            </div>
+            <div class="nav-items">
+                <li><a href="#">Produkter</a></li>
+                <li><a href="#">Kundehistorier</a></li>
+                <li><a href="#">Om os</a></li>
+                <li><a href="#">Kontakt os</a></li>
+                <li><a href="#">Din tryghed</a></li>
+            </div>
+
+            <div class="search-icon">
+                <span class="fas fa-search"></span>
+            </div>
+
+            <div class="cancel-icon">
+
+                <img src="assets/cross.png" alt="exit">
+            </div>
+
+            <div class="search-bar">
+                <form action="#">
+                    <input type="search" class="search-data" placeholder="Search" required>
+
+                    <button type="submit" class="fas fa-search"></button>
+
+
+                </form>
+
+            </div>
+
+            <div class="nav-icons">
+                <img src="assets/user.png" alt="user icon" onclick="toggleMenu()">
+                <img src="assets/cart.png" alt="cart icon">
+
+
+            </div>
+
+        </nav>
+
+
+        <div class="dashboard-menu">
+
+            <h1 class="menu-title">Hi, Anne</h1>
+
+            <div class="scrollmenu">
+                <a href="subscriptions-page1.html" style="color:black">Subscription</a>
+                <a href="dashboard.html" >My Wellvita</a>
+            
+                <a href="account_settings.html">Account Settings</a>
+                <a href="#about">Order history</a>
+                <div class="sign-out-a">
+                    <a href="#news">Sign out</a> </div>
+            </div>
+
+        </div>
+    </header>
+
+
+
+  
+
+<div class="box-1">
+            <h1 class="h1-subscriptions">Your subscriptions</h1>
+            <div class="box-1-top">
+                <div class="d-vitamin-flex-1">
+                    <p>D-vitamin</p>
+                    <p class="grey-text">30 tablets</p>
+                </div>
+                <div class="d-vitamin-flex-2">
+                    <p>Frequency:</p>
+                    <p class="grey-text">60 days</p>
+                </div>
+                <p id="price">67,00 DKK</p>
+
+                <!-- Shipping icon -->
+           <div class="d-vitamin-flex-3">
+                    <img src="assets/ri_truck-fill.png" alt="shipping truck icon">
+                    <p>Next delivery: 23-30 Nov. </p>
+                </div>
+            </div> 
+
+
+
+
+    
+
+            <hr>
+
+            <div class="flex-1">
+                <p>Change Frequency</p>
+                <label class="dropdown">
+
+                    <div class="dd-button">
+                        Bi-monthly
+                    </div>
+
+                    <input type="checkbox" class="dd-input" id="test">
+
+                    <ul class="dd-menu">
+                        <li>December 2022</li>
+                        <li>January 2023</li>
+                        <li>Feburary 2023</li>
+                        <li> March 2023 </li>
+                    </ul>
+                </label>
+            </div>
+            <hr>
+
+            <div class="flex-1">
+                <p>Postpone</p>
+                <label class="dropdown">
+
+                    <div class="dd-button-1">
+                        Postpone
+                    </div>
+
+                    <input type="checkbox" class="dd-input" id="test">
+
+                    <ul class="dd-menu-1">
+                        <li>Every 30 days (Monthly)</li>
+                        <li>Every 60 days (Bi-monthly)</li>
+                    </ul>
+                </label>
+            </div>
+
+            <hr>
+
+            <div class="flex-1">
+                <p>Pause</p>
+                <label class="dropdown">
+                   <!-- Button to trigger the pop-up -->
+    <button class="dd-button-2" onclick="showPopUp()">Pause</button>
+                </label>
+            </div>
+            
+            <!-- POPUP -->
+
+  <!-- HTML for the pop-up -->
+<div id="pop-up" style="display: none;">
+    <h3 class="pop-up-h3">Are you sure you want to pause?</h3>
+    <p class="pop-up-p">Postpone your order for 30 days and we will send you a reminder a week before your next order arrives!</p>
+    <button onclick="hidePopUp()" class="pause-btn">Pause</button>
+    <button onclick="hidePopUp()" class="postpone-btn">Postpone 30 days</button>
+    <p class="p-small-text">If your order is due to arrive within a week, the change will happen after</p>
+
+</div>
+
+<div id="Cancellation" style="display: none;">
+    <p>Are you sure you want to cancel?</p>
+    <button>TEST</button>
+</div>
+  
+
+            <hr>
+              
+
+            <div class="flex-1">
+                <p>Cancellation</p>
+                <label class="dropdown">
+                    <div onclick="showCancellation()" class="dd-button-3">
+                        Cancellation
+                    </div>
+                </label>
+            </div>
+
+            <br>
+
+
+                <a href="subscription-page2.html" class="dd-button-4">WHY D-VITAMIN</a>
+
+
+        </div>
+
+    <!-- 2nd box -->
+
+    <div class="box-1">
+        <div class="box-1-top">
+            <div class="d-vitamin-flex-1">
+                <p>D-vitamin</p>
+                <p class="grey-text">30 tablets</p>
+            </div>
+            <div class="d-vitamin-flex-2">
+                <p>Frequency:</p>
+                <p class="grey-text">60 days</p>
+            </div>
+            <p id="price">67,00 DKK</p>
+
+            <!-- Shipping icon -->
+       <div class="d-vitamin-flex-3">
+                <img src="assets/ri_truck-fill.png" alt="shipping truck icon">
+                <p>Next delivery: 23-30 Nov. </p>
+            </div>
+        </div> 
+
+
+
+
+
+
+        <hr>
+
+        <div class="flex-1">
+            <p>Change Frequency</p>
+            <label class="dropdown">
+
+                <div class="dd-button">
+                    Bi-monthly
+                </div>
+
+                <input type="checkbox" class="dd-input" id="test">
+
+                <ul class="dd-menu">
+                    <li>December 2022</li>
+                    <li>January 2023</li>
+                    <li>Feburary 2023</li>
+                    <li> March 2023 </li>
+                </ul>
+            </label>
+        </div>
+        <hr>
+
+        <div class="flex-1">
+            <p>Postpone</p>
+            <label class="dropdown">
+
+                <div class="dd-button-1">
+                    Postpone
+                </div>
+
+                <input type="checkbox" class="dd-input" id="test">
+
+                <ul class="dd-menu-1">
+                    <li>Every 30 days (Monthly)</li>
+                    <li>Every 60 days (Bi-monthly)</li>
+                </ul>
+            </label>
+        </div>
+
+        <hr>
+
+        <div class="flex-1">
+            <p>Pause</p>
+            <label class="dropdown">
+               <!-- Button to trigger the pop-up -->
+<button class="dd-button-2" onclick="showPopUp()">Pause</button>
+            </label>
+        </div>
+        
+        <!-- POPUP -->
+
+<!-- HTML for the pop-up -->
+<div id="pop-up" style="display: none;">
+<h3 class="pop-up-h3">Are you sure you want to pause?</h3>
+<p class="pop-up-p">Postpone your order for 30 days and we will send you a reminder a week before your next order arrives!</p>
+<button onclick="hidePopUp()" class="pause-btn">Pause</button>
+<button onclick="hidePopUp()" class="postpone-btn">Postpone 30 days</button>
+<p class="p-small-text">If your order is due to arrive within a week, the change will happen after</p>
+
+</div>
+
+<div id="Cancellation" style="display: none;">
+<p>Are you sure you want to cancel?</p>
+<button>TEST</button>
+</div>
+
+
+        <hr>
+          
+
+        <div class="flex-1">
+            <p>Cancellation</p>
+            <label class="dropdown">
+                <div onclick="showCancellation()" class="dd-button-3">
+                    Cancellation
+                </div>
+            </label>
+        </div>
+
+        <br>
+
+
+            <a href="subscription-page2.html" class="dd-button-4">WHY D-VITAMIN</a>
+
+
+    </div>
+
+    <!-- 2nd box end -->
+´
+
+        <div class="box-3">
+            <p id="paused-text" class="box-1-top">Paused</p>
+            <div class="flex-2">
+                <p id="d-vitamin">D-vitamin</p>
+                <p class="grey-text" id="box-3-tablets">30 tablets</p>
+                <p id="start-text">Start</p>
+            </div>
+            <div class="flex-3">
+                <p>Frequency</p>
+                <p class="grey-text">30 days</p>
+            </div>
+            <p id="price-2">67,00 DKK</p>
+            <p id="date">Paused: 23 Sep. 2022</p>
+        </div>
+
+        <div class="box-3">
+            <p id="paused-text">Paused</p>
+            <div class="flex-2">
+                <p id="d-vitamin">D-vitamin</p>
+                <p id="box-3-tablets">30 tablets</p>
+                <p id="start-text">Start</p>
+            </div>
+            <div class="flex-3">
+                <p>Frequency</p>
+                <p class="grey-text">30 days</p>
+            </div>
+            <p id="price-2">67,00 DKK</p>
+            <p id="date">Paused: 23 Sep. 2022</p>
+        </div>
+
+        <footer>
+            <h2 class="h3-footer">Need help? Call us.</h2>
+            <p class="phone">+45 93 93 93 93</p>
+            <section class="e-jura">
+              <a href="#" class="footer-content">Privacy Policy</a>
+              <a href="#" class="footer-content">Cookies Policy</a>
+              <a href="#" class="footer-content">Terms of Use</a>
+            </section>
+          </footer>
+
+
+
+
+
+
+
+    <script src="subscription-page1.js"></script>
+</body>
+
+</html>
