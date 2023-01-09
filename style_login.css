@@ -623,12 +623,15 @@ div.scrollmenu a:hover {
 }
 
 .score-benefits {
-  display: flex;
+  display: grid;
+  padding: 30px;
 }
 
 .score-benefits .infographic {
   max-width: 150px;
-  padding-top: 28px;
+  padding-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .intro-healthscore p {
@@ -780,7 +783,6 @@ footer {
 
 @media (min-width: 420px) {
   .benefits {
-    padding-left: 50px;
     padding-top: 24px;
   }
 }
@@ -814,6 +816,10 @@ footer {
     margin: auto;
     margin-top: 20px;
     width: 1000px;
+  }
+
+  .score-benefits {
+    display: flex;
   }
 }
 
@@ -859,6 +865,29 @@ footer {
   max-width: 248px;
 }
 
+.product-2 img {
+  max-width: 200px;
+}
+
+.product-2 {
+  margin: auto;
+  text-align: center;
+}
+
+.benefits-2 h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.benefits-2 h3 {
+  font-weight: 400;
+  font-size: 15px;
+  padding-top: 14px;
+}
+
 .product-slider {
   overflow: auto;
   white-space: nowrap;
@@ -867,6 +896,16 @@ footer {
 .product-slider .product {
   display: inline-block;
   margin-right: 10px;
+}
+
+.read-more-2 {
+  text-decoration: none;
+  color: black;
+}
+
+.read-more-2 :hover {
+  text-decoration: underline;
+  color: black;
 }
 
 /* Slider RESPONSIVE GENERAL -  */
